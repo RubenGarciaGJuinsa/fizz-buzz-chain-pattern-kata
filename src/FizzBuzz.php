@@ -11,8 +11,6 @@ class FizzBuzz
 {
     public function print($number)
     {
-
-
         $handler = new FizzHandler(
             new SameNumberHandler()
         );
