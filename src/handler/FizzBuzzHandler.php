@@ -11,16 +11,16 @@ abstract class FizzBuzzHandler
         $this->successor = $nextHandler;
     }
 
-    final public function handle($number): ?string
+    final public function handle($number, $predecessorResult = ''): ?string
     {
-        $result = $this->process($number);
+        $result = $predecessorResult.$this->process($number, $predecessorResult);
 
-        if (is_null($result) && ! is_null($this->successor)) {
-            $result = $this->successor->handle($number);
+        if ( ! is_null($this->successor)) {
+            $result = $this->successor->handle($number, $result);
         }
 
         return $result;
     }
 
-    abstract protected function process($number): ?string;
+    abstract protected function process($number, $predecessorResult = ''): ?string;
 }

@@ -6,7 +6,7 @@ class FizzHandler extends FizzBuzzHandler
 {
     const FIZZ_NUMBER = 3;
 
-    protected function process($number): ?string
+    protected function process($number, $predecessorResult = ''): ?string
     {
         if ($this->isDivisibleByFizzNumber($number)) {
             return 'Fizz';
