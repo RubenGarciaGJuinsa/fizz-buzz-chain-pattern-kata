@@ -7,7 +7,8 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "Kata\\": "src/"
+      "Kata\\": "src/",
+      "Kata\\Handler\\": "src/handler"
     }
   },
   "autoload-dev": {

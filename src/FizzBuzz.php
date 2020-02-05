@@ -4,10 +4,14 @@
 namespace Kata;
 
 
+use Kata\Handler\SameNumberHandler;
+
 class FizzBuzz
 {
     public function print($number)
     {
-        return $number;
+        $handler = new SameNumberHandler();
+
+        return $handler->process($number);
     }
 }
