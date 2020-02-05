@@ -2,9 +2,9 @@
 
 namespace Kata\Handler;
 
-class SameNumberHandler
+class SameNumberHandler extends FizzBuzzHandler
 {
-    public function process($number): ?string
+    protected function process($number): ?string
     {
         return (string)$number;
     }

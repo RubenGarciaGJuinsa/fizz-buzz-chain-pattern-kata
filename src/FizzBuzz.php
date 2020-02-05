@@ -16,6 +16,6 @@ class FizzBuzz
 
         $handler = new SameNumberHandler();
 
-        return $handler->process($number);
+        return $handler->handle($number);
     }
 }
