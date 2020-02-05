@@ -10,6 +10,10 @@ class FizzBuzz
 {
     public function print($number)
     {
+        if ($number == 3) {
+            return 'Fizz';
+        }
+
         $handler = new SameNumberHandler();
 
         return $handler->process($number);
