@@ -8,10 +8,19 @@ class FizzHandler extends FizzBuzzHandler
 
     protected function process($number): ?string
     {
-        if ($number % self::FIZZ_NUMBER == 0) {
+        if ($this->isDivisibleByFizzNumber($number)) {
             return 'Fizz';
         }
 
         return null;
+    }
+
+    /**
+     * @param $number
+     * @return bool
+     */
+    protected function isDivisibleByFizzNumber($number): bool
+    {
+        return $number % self::FIZZ_NUMBER == 0;
     }
 }
