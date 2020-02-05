@@ -14,12 +14,22 @@ class FizzBuzzTest extends TestCase
         $response = $fizzBuzz->print(1);
         $this->assertEquals('1', $response);
     }
+
     /** @test */
     public function
     pass_three_get_fizz()
     {
         $fizzBuzz = new FizzBuzz();
         $response = $fizzBuzz->print(3);
+        $this->assertEquals('Fizz', $response);
+    }
+
+    /** @test */
+    public function
+    pass_six_get_fizz()
+    {
+        $fizzBuzz = new FizzBuzz();
+        $response = $fizzBuzz->print(6);
         $this->assertEquals('Fizz', $response);
     }
 }
