@@ -11,6 +11,9 @@ class FizzBuzz
 {
     public function print($number)
     {
+        if ($number % 5 == 0) {
+            return 'Buzz';
+        }
         $handler = new FizzHandler(
             new SameNumberHandler()
         );
