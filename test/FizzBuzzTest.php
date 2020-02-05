@@ -41,4 +41,13 @@ class FizzBuzzTest extends TestCase
         $response = $fizzBuzz->print(5);
         $this->assertEquals('Buzz', $response);
     }
+
+    /** @test */
+    public function
+    pass_fifteen_get_fizzbuzz()
+    {
+        $fizzBuzz = new FizzBuzz();
+        $response = $fizzBuzz->print(15);
+        $this->assertEquals('FizzBuzz', $response);
+    }
 }
