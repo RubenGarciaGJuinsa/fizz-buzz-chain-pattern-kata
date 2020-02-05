@@ -8,7 +8,7 @@ class FizzHandler extends FizzBuzzHandler
 
     protected function process($number): ?string
     {
-        if ($number == self::FIZZ_NUMBER) {
+        if ($number % self::FIZZ_NUMBER == 0) {
             return 'Fizz';
         }
 
