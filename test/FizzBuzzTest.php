@@ -3,7 +3,7 @@ namespace Test;
 
 use PHPUnit\Framework\TestCase;
 
-class DummyTest extends TestCase
+class FizzBuzzTest extends TestCase
 {
     /** @test */
     public function
